@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Notes App
 
-## Getting Started
+A simple Notes Application built with **Next.js** that allows users to manage their notes easily.
+The app uses an external **REST API** (not created by me) for authentication and notes management.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User Authentication  
+  - Login  
+  - Signup  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Notes Management  
+  - Get all users notes  
+  - Get logged-in user notes  
+  - Add new note  
+  - Update note  
+  - Delete note  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Protected routes (users must be logged in)
+- Modern and responsive UI
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js (App Router)**
+- **TypeScript**
+- **NextAuth** (Authentication)
+- **Shadcn/UI** (UI Components)
+- **Tailwind CSS**
+- **External REST API**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔗 API Endpoints Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> The backend API is provided and not implemented by me.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Login
+- Signup
+- Get all notes
+- Get user notes
+- Add note
+- Update note
+- Delete note
+
+---
+
+## 🎨 UI & Styling
+
+- Built using **Shadcn/UI**
+- Styled with **Tailwind CSS**
+- Fully responsive design
+
+---
+
+## 🔐 Authentication
+
+- Authentication handled using **NextAuth**
+- Users cannot access protected pages without logging in
+- Logged-in users are redirected away from auth pages
